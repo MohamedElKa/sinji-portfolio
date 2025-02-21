@@ -1,31 +1,37 @@
 import React from "react";
 import { FloatingDock } from "./floating-dock";
 import { Twitter } from 'lucide-react';
+import { Linkedin } from 'lucide-react';
+import { Github } from 'lucide-react';
+import { Instagram } from 'lucide-react';
+import { FaDiscord } from "react-icons/fa";
+import { FaRedditAlien } from "react-icons/fa";
+
 import Image from "next/image";
 
 export function FloatingDockDemo() {
   const links = [
     {
-      title: "Home",
+      title: "Linkedin",
       icon: (
-        <Twitter className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <Linkedin  className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://www.linkedin.com/in/mohamed-el-karmi-9992b3255/",
     },
 
     {
-      title: "Products",
+      title: "Github",
       icon: (
-        <Twitter className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <Github  className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://github.com/MohamedElKa",
     },
     {
-      title: "Components",
+      title: "Instagram",
       icon: (
-        <Twitter className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <Instagram className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://www.instagram.com/elsimokarmi/",
     },
     // {
     //   title: "Aceternity UI",
@@ -40,30 +46,30 @@ export function FloatingDockDemo() {
     //   href: "#",
     // },
     {
-      title: "Changelog",
+      title: "Discord",
       icon: (
-        <Twitter className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <FaDiscord className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "https://discordapp.com/users/858475231525601302",
+    },
+
+    {
+      title: "Reddit",
+      icon: (
+        <FaRedditAlien className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#",
     },
-
     {
       title: "Twitter",
       icon: (
         <Twitter className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
-    },
-    {
-      title: "GitHub",
-      icon: (
-        <Twitter className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
+      href: "https://x.com/Mohamed59543099",
     },
   ];
   return (
-    <div className="flex items-center justify-center h-[35rem] w-full">
+    <div className="flex  items-center justify-center w-[100%] h-[100%]">
       <FloatingDock
         mobileClassName="translate-y-20" // only for demo, remove for production
         items={links}

@@ -15,6 +15,7 @@ import {
 } from "framer-motion";
 import Link from "next/link";
 import { useRef, useState } from "react";
+import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
 
 export const FloatingDock = ({
   items,
@@ -101,7 +102,7 @@ const FloatingDockDesktop = ({
       onMouseMove={(e) => mouseX.set(e.pageX)}
       onMouseLeave={() => mouseX.set(Infinity)}
       className={cn(
-        "mx-auto hidden md:flex h-16 gap-4 items-end  rounded-2xl bg-gray-50 dark:bg-neutral-900 px-4 pb-3",
+        "mx-auto hidden md:flex h-16 gap-4 items-end  rounded-2xl bg-[#D6D6D6] dark:bg-neutral-900 px-4 pb-3",
         className
       )}
     >

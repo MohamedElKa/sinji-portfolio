@@ -69,8 +69,9 @@ export default function RootLayout({
         </AnimatePresence>
         </div>
         <AnimatePresence>
-          <footer className="h-[135px] w-[100%] bg-[#2B8FAB]">
-              <FloatingDockDemo />          
+          <footer className="h-[135px] w-[100%] pb-[25px] flex flex-col justify-center items-center">
+              <FloatingDockDemo />
+              <p className="text-[#2B8FAB] text-[18px]">Copyright ©2020 All rights reserved to Sinji (mel-karm)</p>      
           </footer>
 
         </AnimatePresence>
