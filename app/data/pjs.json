@@ -1,0 +1,81 @@
+{
+    "web": [
+        
+        {
+            "name": "HTML",
+            "type": "Frontend",
+            "image": "/web/html.svg"
+        },
+        {
+            "name": "CSS",
+            "type": "Frontend",
+            "image": "/web/css.svg"
+        },
+        {
+            "name": "TYPESCRIPT",
+            "type": "Frontend",
+            "image": "/web/typescript.svg"
+        },
+        {
+            "name": "ReactJS",
+            "type": "Frontend",
+            "image": "/web/reactjs.svg"
+        },
+        {
+            "name": "NextJS",
+            "type": "Frontend",
+            "image": "/web/nextjs.svg"
+        },
+        {
+            "name": "NodeJS",
+            "type": "Backend",
+            "image": "/web/nodejs.svg"
+        },
+        {
+            "name": "TailWind",
+            "type": "Frontend",
+            "image": "/web/tailwind.svg"
+        },
+        {
+            "name": "MongoDB",
+            "type": "Database",
+            "image": "/web/mongodb.svg"
+        }
+    ],
+    "tools": [
+        {
+            "name": "Figma",
+            "type": "Design",
+            "image": "/tools/figma.png"
+        },
+        {
+            "name": "Git",
+            "type": "Version Control",
+            "image": "/tools/git.png"
+        },
+        {
+            "name": "Docker",
+            "type": "Containerization",
+            "image": "/tools/docker.png"
+        },
+        {
+            "name": "Bash",
+            "type": "Scripting",
+            "image": "/tools/bash.png"
+        }
+
+    ],
+    "low_level": [
+        {
+            "name": "C",
+            "type": "Low Level",
+            "image": "/low-level/c-.png"
+        },
+        {
+            "name": "CPP",
+            "type": "Low Level",
+            "image": "/low-level/cpp.png"
+        }
+
+    ]
+}
