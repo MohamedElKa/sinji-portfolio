@@ -1,6 +1,8 @@
 "use client";
+import { Toggle } from "@radix-ui/react-toggle";
 import {motion} from "motion/react"
 import Link from "next/link";
+import "../app_css/global.css"
 
 export default function Header({setActiveComponent} : {setActiveComponent: any}){
     return (
@@ -18,6 +20,7 @@ export default function Header({setActiveComponent} : {setActiveComponent: any})
                 <li><Link href="#" onClick={() =>{setActiveComponent("projects")}}>PROJECTS</Link></li>
 
             </ul>
+            <Toggle className="Toggle">Dark</Toggle>
         </motion.header>
     )
 }

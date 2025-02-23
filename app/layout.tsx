@@ -5,7 +5,9 @@ import Header from "./components/header";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import { useEffect, useState } from "react";
-
+import { WiMoonAltNew } from "react-icons/wi";
+import { FaMoon } from "react-icons/fa";
+import { useMotionValue } from "motion/react";
 import { AnimatePresence, motion, useScroll } from "motion/react"
 import { usePathname, useRouter } from "next/navigation";
 import About from "./components/about";
@@ -24,8 +26,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
-
+  const x = useMotionValue(0);
+  const [isOn, setIsOn] = useState(false)
+  // const [isOn, setIsOn] = useState(false)
+  // const 
   // const [component, setComponent] = useState(About)
   const [activeComponent, setActiveComponent] = useState<string>("about");
   useEffect(() =>{
@@ -73,7 +77,10 @@ export default function RootLayout({
               <FloatingDockDemo />
               <p className="text-[#2B8FAB] text-[18px]">Copyright ©2020 All rights reserved to Sinji (mel-karm)</p>      
           </footer>
+          <motion.div className="w-[100vw] h-[555px]">
 
+     
+        </motion.div>
         </AnimatePresence>
       </body>
     </html>
