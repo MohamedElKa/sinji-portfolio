@@ -3,14 +3,13 @@ import Image from "next/image";
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { useOutsideClick } from "./useOutsideHook";
-
-export function ExpandableCardDemo() {
+import { useTheme } from "../context/themeContext";
+export function ExpandableCardDemo({theme, setTheme}) {
   const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
     null
   );
   const ref = useRef<HTMLDivElement>(null);
   const id = useId();
-
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
       if (event.key === "Escape") {
@@ -137,7 +136,7 @@ export function ExpandableCardDemo() {
               <div className="">
                 <motion.h3
                   layoutId={`title-${card.title}-${id}-${index}`}
-                  className="font-medium text-[31px] text-neutral-800 dark:text-neutral-200 text-center md:text-left"
+                  className={"font-medium text-[31px] text-center md:text-left " + (theme === "dark" ? "text-[#D6D6D6]": "text-black")}
                 >
                   {card.title}
                 </motion.h3>

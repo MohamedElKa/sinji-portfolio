@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 import jsonData from "../data/pjs.json" assert { type: 'json' };
 import Image from "next/image";
 import {motion} from "motion/react"
+import { useTheme } from "../context/themeContext";
 const WebProjects = ({web}) =>{
   return ( <ul className="pList flex flex-wrap gap-[25px] xl:max-h-[34rem]">
     {
@@ -63,6 +64,7 @@ const LowLevel = ({low_level}) =>{
 }
 export default function Techs() {
   const [data, setData] = useState({})
+  const {theme, setTheme} = useTheme()
   useEffect(() =>{
     console.log(jsonData)
     setData(jsonData)
@@ -74,8 +76,8 @@ export default function Techs() {
     <motion.div 
     initial={{scale: 0}} animate={{scale: 1}} exit={{scale: 0}} transition={{duration: 0.3}}
     className="w-[100%] h-[100%]">
-      <h1 className="text-[#000000] text-[47px]">Technologies & Skills</h1>
-      <p className="text-[#2b2b2b] text-[24px] mb-[25px]">"These are the technologies I have expertise in and use for development."</p>
+      <h1 className={"text-[#000000] text-[47px] " + (theme === "dark" ? "text-[#D6D6D6]": "text-black")}>Technologies & Skills</h1>
+      <p className={"text-[#2b2b2b] text-[24px] mb-[25px] " + (theme === "dark" ? "text-[#D6D6D6]": "text-black")} >"These are the technologies I have expertise in and use for development."</p>
         <h1 className="text-[38px] text-[#2B8FAB] mb-[25px]">Web</h1>
         {data.web && <WebProjects web={data.web}/>}
         <h1 className="text-[38px] text-[#2B8FAB] mt-[75px] mb-[25px]">Tools</h1>

@@ -18,7 +18,7 @@ body header .links a:hover{
 }
 
 body .profile{
-  border: 1px solid var(--second);
+  /* border: 1px solid var(--second); */
 }
 
 
@@ -90,4 +90,9 @@ body .profile{
   }
 }
 
+
+body .Toggle[data-state="on"] {
+	background-color: black;
+	color: white;
+}
 
