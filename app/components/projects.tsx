@@ -5,7 +5,7 @@ import { ExpandableCardDemo } from "./expendable"
 import { useTheme } from "../context/themeContext"
 
 export default function Projects(){
-  const {theme, setTheme} = useTheme()
+  const {theme} = useTheme()
     return (
         <motion.div 
     initial={{scale: 0}} animate={{scale: 1}} exit={{scale: 0}} transition={{duration: 0.3}}
