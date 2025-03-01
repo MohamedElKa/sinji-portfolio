@@ -17,7 +17,7 @@ import {
     MenubarTrigger,
   } from "@/components/ui/menubar"
   
-export default function Header({setActiveComponent} : {setActiveComponent: () => void}){
+export default function Header({setActiveComponent} : {setActiveComponent: (arg: string) => void}){
     const {theme, setTheme} = useTheme()
     return (
         <motion.header 
