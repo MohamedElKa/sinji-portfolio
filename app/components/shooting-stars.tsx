@@ -22,6 +22,7 @@ interface ShootingStarsProps {
   starWidth?: number;
   starHeight?: number;
   className?: string;
+  bodyHeight?: number;
 }
 
 const getRandomStartPoint = () => {
