@@ -9,7 +9,11 @@ interface ThemeType{
 const themeContext = createContext<ThemeType | undefined>(undefined);
 
 const useTheme = () => {
-    return useContext(themeContext)
+    const context = useContext(themeContext)
+    if (!context) {
+        throw new Error('useTheme must be used within a ThemeProvider');
+      }
+    return context
 }
 const ThemeProvider = ({children, theme, setTheme} :{children: React.ReactNode, theme: string, setTheme: () => void}) => {
     return (
