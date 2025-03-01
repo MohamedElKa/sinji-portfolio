@@ -77,7 +77,7 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
 
         const { width, height } = canvas.getBoundingClientRect();
         canvas.width = width;
-        canvas.height = bodyHeight;
+        canvas.height = bodyHeight as number;
         setStars(generateStars(width, height));
       }
     };
