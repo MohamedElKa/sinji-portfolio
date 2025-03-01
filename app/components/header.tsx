@@ -34,7 +34,7 @@ export default function Header({setActiveComponent} : {setActiveComponent: (arg:
             <div className="flex gap-[15px] menu">
             <Menubar className="menu cursor-pointer">
   <MenubarMenu >
-    <MenubarTrigger className="text-[22px] cursor-pointer">Menu</MenubarTrigger>
+    <MenubarTrigger className="text-[22px] cursor-pointer bg-none">Menu</MenubarTrigger>
     <MenubarContent align="end" >
       <MenubarItem onClick={() =>{setActiveComponent("about")}} className="text-[25px] cursor-pointer">About</MenubarItem>
       <MenubarItem onClick={() =>{setActiveComponent("techs")}} className="text-[25px] cursor-pointer">Techs</MenubarItem>

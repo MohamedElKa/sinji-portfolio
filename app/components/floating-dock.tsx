@@ -26,7 +26,7 @@ export const FloatingDock = ({
   desktopClassName?: string;
   mobileClassName?: string;
 }) => {
-  console.log(desktopClassName)
+  // console.log(desktopClassName)
   return (
     <>
       <FloatingDockDesktop items={items} className={desktopClassName} />

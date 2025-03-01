@@ -112,6 +112,9 @@ body .Toggle[data-state="on"] {
 body .menu{
   background: none;
 }
+body header .menu  [id|="radix-:Rd5l7H1:"]{
+  background: none;
+}
 
 @media  (width <= 770px){
   body .header {
