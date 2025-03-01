@@ -109,6 +109,10 @@ body .Toggle[data-state="on"] {
   }
 }
 
+body .menu{
+  background: none;
+}
+
 @media  (width <= 770px){
   body .header {
     min-width: 100px;
