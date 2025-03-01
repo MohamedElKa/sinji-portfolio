@@ -3,10 +3,10 @@ import Image from "next/image";
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { useOutsideClick } from "./useOutsideHook";
-import { useTheme } from "../context/themeContext";
+// import { useTheme } from "../context/themeContext";
 import { X } from 'lucide-react';
 
-export function ExpandableCardDemo({theme, setTheme}) {
+export function ExpandableCardDemo({theme}) {
   const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
     null
   );

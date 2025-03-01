@@ -1,7 +1,7 @@
 // import Image from "next/image";
 "use client"
 import About from "./components/about";
-import { AnimatePresence, motion, useScroll } from "motion/react"
+import {motion} from "motion/react"
 
 export default function Home() {
     const AboutMotion = motion(About)

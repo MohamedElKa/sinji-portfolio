@@ -7,6 +7,11 @@ export default {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+	compilerOptions: {
+	  "moduleResolution": "node",
+	  "esModuleInterop": true
+	},
+  
   theme: {
   	extend: {
   		colors: {

@@ -7,7 +7,7 @@ import { Instagram } from 'lucide-react';
 import { FaDiscord } from "react-icons/fa";
 import { FaRedditAlien } from "react-icons/fa";
 
-import Image from "next/image";
+// import Image from "next/image";
 
 export function FloatingDockDemo() {
   const links = [

@@ -1,14 +1,14 @@
 "use client";
 
-import Image from "next/image";
+// import Image from "next/image";
 import { useEffect, useState } from "react";
-import AOS from "aos";
-import { motion, useMotionValue, useScroll } from "motion/react"
+// import AOS from "aos";
+import { motion, useMotionValue } from "motion/react"
 import { useTheme } from "../context/themeContext";
 
 export default function About(){
-    const [isFlip, setIsFlip] = useState<boolean>(true)
-    const {theme, setTheme} = useTheme()
+    // const [isFlip, setIsFlip] = useState<boolean>(true)
+    const {theme} = useTheme()
     const l = useMotionValue(0)
     useEffect(() =>{
         setTimeout(() =>{
@@ -26,8 +26,8 @@ export default function About(){
             className="w-[755px] h-[555px] profile"
             alt="profile"
             onClick={() =>{
-                console.log("efef")
-                setIsFlip(false)
+                // console.log("efef")
+                // setIsFlip(false)
             }}
             // initial={{height: 0}}
             // animate={{height: 555}}
@@ -36,7 +36,7 @@ export default function About(){
 
            </motion.img>
            <div className="simo w-[755px] pt-[25px] pb-[25px]">
-                <h1 className="text-[#2B8FAB] text-[34px]">Hi, I'm Mohamed ELKarmi</h1>
+                <h1 className="text-[#2B8FAB] text-[34px]">Hi, I am Mohamed ELKarmi</h1>
                 <p className=" text-[20px]">As a student at 1337 with four years of programming experience, I am deeply passionate about web development. Eager to continuously expand my skill set, I approach every challenge with enthusiasm and a thirst for knowledge. With a solid foundation in programming and a keen interest in exploring new technologies, I am ready to embark on new learning opportunities and contribute to impactful projects in the world of web development.
                 </p>
                 <a href="/resume.pdf" download="resume.pdf">

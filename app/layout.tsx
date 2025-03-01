@@ -2,18 +2,18 @@
 import "./app_css/globals.css";
 import { Karantina } from 'next/font/google';
 import Header from "./components/header";
-import AOS from 'aos';
+// import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import { useEffect, useState } from "react";
-import { WiMoonAltNew } from "react-icons/wi";
-import { FaMoon } from "react-icons/fa";
-import { useMotionValue } from "motion/react";
-import { AnimatePresence, motion, useScroll } from "motion/react"
-import { usePathname, useRouter } from "next/navigation";
+// import { WiMoonAltNew } from "react-icons/wi";
+// import { FaMoon } from "react-icons/fa";
+// import { useMotionValue } from "motion/react";
+import { AnimatePresence} from "motion/react"
+// import {useRouter } from "next/navigation";
 import About from "./components/about";
 import Techs from "./components/techs";
 import Projects from "./components/projects";
-import { Twitter } from 'lucide-react';
+// import { Twitter } from 'lucide-react';
 import { FloatingDockDemo } from "./components/floatingDock";
 import { ThemeProvider } from "./context/themeContext";
 import { ShootingStars } from "./components/shooting-stars";
@@ -23,11 +23,7 @@ const karantina = Karantina({
   weight: ["400", "700"],
 });
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout() {
   const [theme, setTheme] = useState("light");
 
   const [bodyHeight, setBodyHeight] = useState(0);
