@@ -12,7 +12,7 @@ export default function Projects(){
     className={"w-[100%] h-[100%] " + (theme === "dark" ? "text-[#D6D6D6]": "text-black")}>
       <h1 className=" text-[47px]">Projects</h1>
       <p className=" text-[24px] mb-[25px]">&quot;A selection of projects I’ve worked on. Some are private, but others can be found on my GitHub.&quot;</p>
-      <ExpandableCardDemo theme={theme} setTheme={setTheme} />
+      <ExpandableCardDemo theme={theme} />
 
 
     </motion.div>
