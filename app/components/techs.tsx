@@ -8,7 +8,13 @@ import jsonData from "../data/pjs.json" assert { type: 'json' };
 // import Image from "next/image";
 import {motion} from "motion/react"
 import { useTheme } from "../context/themeContext";
-const WebProjects = ({web}) =>{
+
+interface TechsTypes{
+  name: string;
+  type: string;
+  image: string;
+}
+const WebProjects = ({web} :{web: TechsTypes}) =>{
   return ( <ul className="pList flex flex-wrap gap-[25px] xl:max-h-[34rem]">
     {
       web.map((w) =>{
@@ -26,7 +32,7 @@ const WebProjects = ({web}) =>{
    
   </ul>)
 }
-const Tools = ({tools}) =>{
+const Tools = ({tools} : {tools: TechsTypes}) =>{
   return ( <ul className="pList flex flex-wrap gap-[25px] xl:max-h-[34rem]">
     {
       tools.map((t) =>{
@@ -44,7 +50,7 @@ const Tools = ({tools}) =>{
    
   </ul>)
 }
-const LowLevel = ({low_level}) =>{
+const LowLevel = ({low_level} : {low_level: TechsTypes}) =>{
   return ( <ul className="pList flex flex-wrap gap-[25px] xl:max-h-[34rem]">
     {
       low_level.map((l) =>{
