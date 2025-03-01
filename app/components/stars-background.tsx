@@ -23,6 +23,8 @@ interface StarBackgroundProps {
   minTwinkleSpeed?: number;
   maxTwinkleSpeed?: number;
   className?: string;
+  bodyHeight?: number;
+  
 }
 
 export const StarsBackground: React.FC<StarBackgroundProps> = ({
