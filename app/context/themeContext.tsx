@@ -4,7 +4,7 @@ import { createContext, useContext } from "react"
 
 interface ThemeType{
     theme: string;
-    setTheme: (theme: string) => void;
+    setTheme: React.Dispatch<React.SetStateAction<string>>;
 }
 const themeContext = createContext<ThemeType | undefined>(undefined);
 
@@ -15,7 +15,7 @@ const useTheme = () => {
       }
     return context
 }
-const ThemeProvider = ({children, theme, setTheme} :{children: React.ReactNode, theme: string, setTheme: () => void}) => {
+const ThemeProvider = ({children, theme, setTheme} :{children: React.ReactNode, theme: string, setTheme:React.Dispatch<React.SetStateAction<string>>}) => {
     return (
         <themeContext.Provider value={{theme, setTheme}}>
             {children}
