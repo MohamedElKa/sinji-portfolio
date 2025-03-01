@@ -69,7 +69,7 @@ const LowLevel = ({low_level} : {low_level: TechsTypes[]}) =>{
   </ul>)
 }
 export default function Techs() {
-  const [data, setData] = useState({})
+  const [data, setData] = useState(jsonData)
   const {theme} = useTheme()
   useEffect(() =>{
     console.log(jsonData)
