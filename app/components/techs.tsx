@@ -14,7 +14,7 @@ interface TechsTypes{
   type: string;
   image: string;
 }
-const WebProjects = ({web} :{web: TechsTypes}) =>{
+const WebProjects = ({web} :{web: TechsTypes[]}) =>{
   return ( <ul className="pList flex flex-wrap gap-[25px] xl:max-h-[34rem]">
     {
       web.map((w) =>{
@@ -32,7 +32,7 @@ const WebProjects = ({web} :{web: TechsTypes}) =>{
    
   </ul>)
 }
-const Tools = ({tools} : {tools: TechsTypes}) =>{
+const Tools = ({tools} : {tools: TechsTypes[]}) =>{
   return ( <ul className="pList flex flex-wrap gap-[25px] xl:max-h-[34rem]">
     {
       tools.map((t) =>{
@@ -50,7 +50,7 @@ const Tools = ({tools} : {tools: TechsTypes}) =>{
    
   </ul>)
 }
-const LowLevel = ({low_level} : {low_level: TechsTypes}) =>{
+const LowLevel = ({low_level} : {low_level: TechsTypes[]}) =>{
   return ( <ul className="pList flex flex-wrap gap-[25px] xl:max-h-[34rem]">
     {
       low_level.map((l) =>{
