@@ -10,7 +10,7 @@ export function ExpandableCardDemo({theme} : {theme: string}) {
   const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
     null
   );
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLDivElement | null>(null);
   const id = useId();
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
