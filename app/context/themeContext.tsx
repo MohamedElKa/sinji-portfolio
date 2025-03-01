@@ -7,7 +7,7 @@ const themeContext = createContext();
 const useTheme = () => {
     return useContext(themeContext)
 }
-const ThemeProvider = ({children, theme, setTheme} :{children: any, theme: string, setTheme: Function}) => {
+const ThemeProvider = ({children, theme, setTheme} :{children: React.ReactNode, theme: string, setTheme: () => void}) => {
     return (
         <themeContext.Provider value={{theme, setTheme}}>
             {children}
