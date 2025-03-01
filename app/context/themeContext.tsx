@@ -3,7 +3,7 @@
 import { createContext, useContext } from "react"
 
 interface ThemeType{
-    theme: string,
+    theme: string;
     setTheme: (theme: string) => void;
 }
 const themeContext = createContext<ThemeType | undefined>(undefined);
