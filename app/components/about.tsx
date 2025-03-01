@@ -1,7 +1,7 @@
 "use client";
 
 // import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 // import AOS from "aos";
 import { motion, useMotionValue } from "motion/react"
 import { useTheme } from "../context/themeContext";

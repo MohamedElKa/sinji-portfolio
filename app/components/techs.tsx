@@ -77,7 +77,7 @@ export default function Techs() {
     initial={{scale: 0}} animate={{scale: 1}} exit={{scale: 0}} transition={{duration: 0.3}}
     className="w-[100%] h-[100%]">
       <h1 className={"text-[#000000] text-[47px] " + (theme === "dark" ? "text-[#D6D6D6]": "text-black")}>Technologies & Skills</h1>
-      <p className={"text-[#2b2b2b] text-[24px] mb-[25px] " + (theme === "dark" ? "text-[#D6D6D6]": "text-black")} >"&quot;These are the technologies I have expertise in and use for development.&quot;"</p>
+      <p className={"text-[#2b2b2b] text-[24px] mb-[25px] " + (theme === "dark" ? "text-[#D6D6D6]": "text-black")} >&quot;These are the technologies I have expertise in and use for development.&quot;</p>
         <h1 className="text-[38px] text-[#2B8FAB] mb-[25px]">Web</h1>
         {data.web && <WebProjects web={data.web}/>}
         <h1 className="text-[38px] text-[#2B8FAB] mt-[75px] mb-[25px]">Tools</h1>
