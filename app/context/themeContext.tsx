@@ -2,7 +2,11 @@
 
 import { createContext, useContext } from "react"
 
-const themeContext = createContext();
+interface ThemeType{
+    theme: string,
+    setTheme: (theme: string) => void;
+}
+const themeContext = createContext<ThemeType | undefined>(undefined);
 
 const useTheme = () => {
     return useContext(themeContext)

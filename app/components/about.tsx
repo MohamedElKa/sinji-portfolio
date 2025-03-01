@@ -8,7 +8,7 @@ import { useTheme } from "../context/themeContext";
 
 export default function About(){
     // const [isFlip, setIsFlip] = useState<boolean>(true)
-    const {theme}: {theme: string}= useTheme()
+    const {theme} = useTheme()
     const l = useMotionValue(0)
     useEffect(() =>{
         setTimeout(() =>{
