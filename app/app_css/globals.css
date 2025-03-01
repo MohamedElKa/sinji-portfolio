@@ -96,3 +96,72 @@ body .Toggle[data-state="on"] {
 	color: white;
 }
 
+@media  (width <= 1133px){
+  body .header {
+    min-width: 700px;
+    max-width: 700px;
+  }
+  body .about{
+    width: 700px;
+  }
+  body .about .simo{
+    width: 100%;
+  }
+}
+
+@media  (width <= 770px){
+  body .header {
+    min-width: 100px;
+    max-width: 500px;
+  }
+  body .about{
+    min-width: 500px;
+    max-width: 100px;
+  }
+  body .projectsList{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+  body .links{
+    display: none;
+  }
+  body .menu{
+    display: flex;
+  }
+  body .about .profile{
+    height: 355px;
+  }
+}
+@media  (width > 770px){
+
+  body .links{
+    display: flex;
+  }
+  body .menu{
+    display: none;
+  }
+}
+@media  (width <= 570px){
+
+  body .header {
+    min-width: 100px;
+    max-width: 300px;
+  }
+  body .about{
+    min-width: 300px;
+    max-width: 100px;
+  }
+  body .about .profile{
+    height: 300px;
+  }
+  body .dock{
+    width: 270px;
+    gap: 1px;
+    background: none;
+  }
+}
+body .menu [id|="radix-:R39d7H1:"]{
+  background: transparent;
+  color: black;
+}

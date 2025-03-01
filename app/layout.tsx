@@ -81,7 +81,7 @@ export default function RootLayout({
       >
         <ThemeProvider theme={theme} setTheme={setTheme}>
           <Header setActiveComponent={setActiveComponent}/>
-          <div className="max-w-[1100px] min-w-[1100px] pt-[75px] pb-[75px]">
+          <div className="w-[1100px] w-[1100px] about pt-[75px] pb-[75px]">
           <AnimatePresence mode="wait">
             {renderComponent()}
           </AnimatePresence>
