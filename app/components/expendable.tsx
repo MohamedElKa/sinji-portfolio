@@ -6,7 +6,7 @@ import { useOutsideClick } from "./useOutsideHook";
 // import { useTheme } from "../context/themeContext";
 import { X } from 'lucide-react';
 
-export function ExpandableCardDemo({theme}) {
+export function ExpandableCardDemo({theme} : {theme: string}) {
   const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
     null
   );
