@@ -76,7 +76,7 @@ export default function Techs() {
     setData(jsonData)
   }, [])
   useEffect(() =>{
-    console.log(data.web)
+    // console.log(data.web)
   }, [data])
   return (
     <motion.div 
