@@ -143,7 +143,7 @@ export function ExpandableCardDemo({theme} : {theme: string}) {
             layoutId={`card-${card.title}-${id}-${index}`}
             key={`card-${card.title}-${id}-${index}`}
             onClick={() => setActive(card)}
-            className="p-4 h-[100%] flex flex-col md:flex-row justify-between items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
+            className="p-4  flex flex-col md:flex-row justify-between items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
           >
             <div className="flex gap-4 flex-col md:flex-row ">
               <motion.div layoutId={`image-${card.title}-${id}-${index}`}>
@@ -263,7 +263,7 @@ const cards = [
   {
     description: "Web",
     title: "Chat App",
-    src: "/projects/chat-app.jpg",
+    src: "/projects/Chat.png",
     ctaText: "Show",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {

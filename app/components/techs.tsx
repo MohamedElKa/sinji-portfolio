@@ -72,7 +72,7 @@ export default function Techs() {
   const [data, setData] = useState(jsonData)
   const {theme} = useTheme()
   useEffect(() =>{
-    console.log(jsonData)
+    // console.log(jsonData)
     setData(jsonData)
   }, [])
   useEffect(() =>{
