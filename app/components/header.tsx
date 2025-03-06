@@ -49,7 +49,7 @@ export default function Header({setActiveComponent} : {setActiveComponent: (arg:
     </MenubarContent>
   </MenubarMenu>
 </Menubar>
-<TooltipProvider>
+{/* <TooltipProvider>
             <Tooltip>
                 <TooltipTrigger>
                     
@@ -70,14 +70,14 @@ export default function Header({setActiveComponent} : {setActiveComponent: (arg:
                 <p className="text-[17px]">{theme == "light" ? "Dark" : "Light"}</p>
                 </TooltipContent>
             </Tooltip>
-            </TooltipProvider>
+            </TooltipProvider> */}
                 </div>
 
             <ul className="links text-[39px] items-center font-[400] links flex gap-[25px]">
                 <li><Link href="#" onClick={() =>{setActiveComponent("about")}} className="font-[400]">ABOUT</Link></li>
                 <li><Link href="#" onClick={() =>{setActiveComponent("techs")}}>TECHS</Link></li>
                 <li><Link href="#" onClick={() =>{setActiveComponent("projects")}}>PROJECTS</Link></li>
-                <TooltipProvider>
+                {/* <TooltipProvider>
             <Tooltip>
                 <TooltipTrigger>
                     
@@ -98,7 +98,7 @@ export default function Header({setActiveComponent} : {setActiveComponent: (arg:
                 <p className="text-[17px]">{theme == "light" ? "Dark" : "Light"}</p>
                 </TooltipContent>
             </Tooltip>
-            </TooltipProvider>
+            </TooltipProvider> */}
 
 
             </ul>
