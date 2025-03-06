@@ -39,7 +39,7 @@ export default function About(){
                 <h1 className="text-[#2B8FAB] text-[34px]">Hi, I am Mohamed ELKarmi</h1>
                 <p className=" text-[20px]">As a student at 1337 with four years of programming experience, I am deeply passionate about web development. Eager to continuously expand my skill set, I approach every challenge with enthusiasm and a thirst for knowledge. With a solid foundation in programming and a keen interest in exploring new technologies, I am ready to embark on new learning opportunities and contribute to impactful projects in the world of web development.
                 </p>
-                <a href="/sinji.pdf" download="sinji.pdf">
+                <a href="/MK-CV.pdf" download="MK-CV.pdf">
                     <button className="text-[#D6D6D6] bg-[#2b8fab] pt-[7px] pb-[7px] pl-[15px] pr-[15px] text-[25px] mt-[25px]">Download Resume</button>
 
                 </a>

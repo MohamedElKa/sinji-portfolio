@@ -16,6 +16,12 @@ import {
     // MenubarShortcut,
     MenubarTrigger,
   } from "@/components/ui/menubar"
+  import {
+    Tooltip,
+    TooltipContent,
+    TooltipProvider,
+    TooltipTrigger,
+  } from "@/components/ui/tooltip"
   
 export default function Header({setActiveComponent} : {setActiveComponent: (arg: string) => void}){
     const {theme, setTheme} = useTheme()
@@ -43,36 +49,57 @@ export default function Header({setActiveComponent} : {setActiveComponent: (arg:
     </MenubarContent>
   </MenubarMenu>
 </Menubar>
-<li className="flex items-center" onClick={() =>{
-                if (theme === "light") {
-                    setTheme("dark")
-                    }
-                else{
-                    setTheme("light")
+<TooltipProvider>
+            <Tooltip>
+                <TooltipTrigger>
+                    
+                    <li className="flex items-center" onClick={() =>{
+                        if (theme === "light") {
+                            setTheme("dark")
+                            }
+                        else{
+                            setTheme("light")
 
-                }
-        }}>
-            <Toggle className="Toggle text-[39px] w-[35px] h-[35px]">    <Moon className="w-[35px] h-[35px]"/>
-            </Toggle>
-            </li>
+                        }
+                }}>
+                    <Toggle className="Toggle text-[39px] w-[35px] h-[35px]">  {theme == "light" ? <Moon className="w-[35px] h-[35px]"/> : <Sun className="w-[45px] h-[45px]"/>}  
+                    </Toggle>
+                    </li>
+                </TooltipTrigger>
+                <TooltipContent>
+                <p className="text-[17px]">{theme == "light" ? "Dark" : "Light"}</p>
+                </TooltipContent>
+            </Tooltip>
+            </TooltipProvider>
                 </div>
 
             <ul className="links text-[39px] items-center font-[400] links flex gap-[25px]">
                 <li><Link href="#" onClick={() =>{setActiveComponent("about")}} className="font-[400]">ABOUT</Link></li>
                 <li><Link href="#" onClick={() =>{setActiveComponent("techs")}}>TECHS</Link></li>
                 <li><Link href="#" onClick={() =>{setActiveComponent("projects")}}>PROJECTS</Link></li>
-            <li className="flex items-center" onClick={() =>{
-                if (theme === "light") {
-                    setTheme("dark")
-                    }
-                else{
-                    setTheme("light")
+                <TooltipProvider>
+            <Tooltip>
+                <TooltipTrigger>
+                    
+                    <li className="flex items-center" onClick={() =>{
+                        if (theme === "light") {
+                            setTheme("dark")
+                            }
+                        else{
+                            setTheme("light")
 
-                }
-        }}>
-            <Toggle className="Toggle text-[39px] w-[35px] h-[35px]">  {theme == "light" ? <Moon className="w-[35px] h-[35px]"/> : <Sun className="w-[45px] h-[45px]"/>}  
-            </Toggle>
-            </li>
+                        }
+                }}>
+                    <Toggle className="Toggle text-[39px] w-[35px] h-[35px]">  {theme == "light" ? <Moon className="w-[35px] h-[35px]"/> : <Sun className="w-[45px] h-[45px]"/>}  
+                    </Toggle>
+                    </li>
+                </TooltipTrigger>
+                <TooltipContent>
+                <p className="text-[17px]">{theme == "light" ? "Dark" : "Light"}</p>
+                </TooltipContent>
+            </Tooltip>
+            </TooltipProvider>
+
 
             </ul>
         </motion.header>
