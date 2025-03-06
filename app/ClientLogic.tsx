@@ -37,7 +37,7 @@ export default function ClientLogic() {
     if (pathName !== "/"){
       router.push("/")
     }
-  }, [pathName])
+  }, [pathName, router])
   useEffect(() => {
     const updateHeight = () => {
       setBodyHeight(document.body.scrollHeight);

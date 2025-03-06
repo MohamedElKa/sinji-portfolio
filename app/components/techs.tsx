@@ -5,7 +5,7 @@ import { GlowingEffect } from "./glowing-effect";
 import "../app_css/projects.css"
 import { useState, useEffect } from "react";
 import jsonData from "../data/pjs.json" assert { type: 'json' };
-// import Image from "next/image";
+import Image from "next/image";
 import {motion} from "motion/react"
 import { useTheme } from "../context/themeContext";
 
@@ -117,11 +117,13 @@ const GridItem = ({name, type, image}: GridItemProps) => {
           inactiveZone={0.01}
         />
         <div className="bg-white w-[230px] h-[155px] rounded-1.5xl pl-[15px] md:rounded-2xl relative flex items-center  h-full  gap-6 overflow-hidden  border-1.5 dark:shadow-[0px_0px_27px_0px_#2D2D2D]">
-          <img
+          <Image
             className="w-[80px] h-[80px]"
             src={image}
             alt={name}
-          ></img>
+            width={80}
+            height={80}
+          ></Image>
           <div>
               <h1 className="text-[27px]">{name}</h1>
               <h2 className="text-[20px] text-[#2B8FAB]">{type}</h2>

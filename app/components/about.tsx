@@ -1,20 +1,20 @@
 "use client";
 
 // import Image from "next/image";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 // import AOS from "aos";
-import { motion, useMotionValue } from "motion/react"
+import { motion} from "motion/react"
 import { useTheme } from "../context/themeContext";
 
 export default function About(){
     // const [isFlip, setIsFlip] = useState<boolean>(true)
     const {theme} = useTheme()
-    const l = useMotionValue(0)
-    useEffect(() =>{
-        setTimeout(() =>{
-            l.set(105);
-        }, 1000)
-    }, [])
+    // const l = useMotionValue(0)
+    // useEffect(() =>{
+    //     setTimeout(() =>{
+    //         l.set(105);
+    //     }, 1000)
+    // }, [])
     
     return (
     <motion.div initial={{scale: 0}} animate={{scale: 1}} style={{color: (theme === "dark" ? "#D6D6D6": "black")}} exit={{scale: 0}} transition={{duration: 0.3}} className="max-w-[100%] flex flex-col justify-center items-center">
