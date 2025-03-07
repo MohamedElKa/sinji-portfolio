@@ -5,7 +5,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true, // Required for GitHub Pages
   },
-  basePath: '/sinji-portfolio'
+  // basePath: '/sinji-portfolio',
+  // assetPrefix: '/sinji-portfolio'
 };
 
 export default nextConfig;
