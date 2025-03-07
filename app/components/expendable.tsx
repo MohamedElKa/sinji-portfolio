@@ -292,9 +292,28 @@ system calls and low-level programming.
     },
   },
   {
+    description: "Web",
+    title: "TaskFlow",
+    src: "/projects/taskflow.png",
+    ctaText: "Show",
+    ctaLink: "",
+    content: () => {
+      return (
+        <p>
+         TaskFlow is a simple, user-friendly task management app built with Next.js. It uses a Kanban board layout to help users keep track of tasks, with three columns: To Do, In Progress, and Done.
+
+The app features drag-and-drop functionality, making it easy to move tasks around as you work through them. All tasks and their progress are saved using localStorage, so your data is kept even if you refresh the page.
+
+I built this project to improve my skills in React, Next.js, and client-side state management, while creating a smooth, intuitive experience for users.
+        </p>
+      );
+    },
+  },
+
+  {
     description: "Low Level",
     title: "IRC Server",
-    src: "/projects/Chat.png",
+    src: "/projects/irc.png",
     ctaText: "Show",
     ctaLink: "https://github.com/MohamedElKa/ft_irc",
     content: () => {
