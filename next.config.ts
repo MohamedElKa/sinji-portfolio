@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
     unoptimized: true, // Required for GitHub Pages
   },
   // basePath: '/sinji-portfolio',
+  
   // assetPrefix: '/sinji-portfolio'
 };
 
